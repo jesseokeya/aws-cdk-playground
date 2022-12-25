@@ -49,7 +49,7 @@ export class CloudfrontPlaygroundStack extends cdk.Stack {
     // Creating CloudFront distribution
     let cloudFrontDist = new Distribution(this, "cloudfrontDist", {
       defaultRootObject: "index.html",
-      domainNames: ["enlearacademy.tk"],
+      domainNames: ["domain.com"],
       certificate: certificateArn,
       defaultBehavior: {
         origin: new origins.S3Origin(websiteBucket as any, {
