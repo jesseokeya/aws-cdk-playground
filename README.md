@@ -1,4 +1,4 @@
-# CDK Playground
+## Aws CDK Playground
 Simple Fibonacci generator ⚙️. To grasp how to deploy a real world app to aws via aws cdk for typescript
 
 The frontend react application will provide input for the users to enter the desired Fibonacci number and the backend REST API will return the value for the requested number. Trying to build a scalable architecture for this app where hundreds of users start requesting Fibonacci numbers ✨. Using aws `Fargate` and an `ECS` cluster to containerize the backend service and `Cloudfront` as a cdn to serve static files with `Route 53` for dns mapping.
