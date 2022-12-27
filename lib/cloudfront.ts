@@ -40,6 +40,7 @@ export class CloudfrontPlaygroundStack extends cdk.Stack {
       sources: [Source.asset("./frontend/build")],
       destinationBucket: websiteBucket as any
     });
+    
 
     // Create Origin Access Identity for CloudFront
     const originAccessIdentity = new OriginAccessIdentity(this, "cloudfrontOAI", {
