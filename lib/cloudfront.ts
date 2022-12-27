@@ -37,7 +37,7 @@ export class CloudfrontPlaygroundStack extends cdk.Stack {
 
     // Trigger frontend deployment
     new BucketDeployment(this, "websiteDeployment", {
-      sources: [Source.asset("./frontend/app/build")],
+      sources: [Source.asset("./frontend/build")],
       destinationBucket: websiteBucket as any
     });
 
